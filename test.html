@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+        *{box-sizing: border-box;}
+        section .inner {max-width: 1300px;}
+        .main-hotBrand .inner{box-sizing: border-box;}
+        .main-hotBrand .hotBrand-title{text-align: center;}
+        section.main-hotBrand{position: relative; z-index: 100; padding: .56rem 0; background: #f4f5f8; } 
+        .main-hotBrand h3{font-size: 48px; line-height: 1.5em;}
+        .main-hotBrand .hotBrand-title p{display: block; font-size: 20px; line-height: 1.5em; }
+        .main-hotBrand .hotBrand-contents{flex: 1;}
+        .hotBrand-list{display: flex; flex-wrap: wrap;  margin-top: 2.22rem; margin-bottom: -2.22rem;}
+        .hotBrand-list .hotBrand-item{flex-basis: 100%;}
+        .hotBrand-list .hotBrand-item a{margin: 0 0 2.22rem; display: block;}
+        .hotBrand-list .hotBrand-item .thumb{font-size: 0; border-radius: 0.889rem; }
+        .hotBrand-list .hotBrand-item .desc{margin: 0.94rem 0 0;}
+        .hotBrand-list .hotBrand-item strong{font-size: 1.2rem;}
+        .hotBrand-list .hotBrand-item p{font-size: 1rem; line-height: 1.5rem;}
+    
+        @media (min-width: 1280px) {
+            section.main-hotBrand{min-height: 100vh; position: relative; padding: 8.89rem 0; z-index: 1000;}
+            .main-hotBrand .inner { position: relative; display: flex; height: auto; }
+            .main-hotBrand.inner { max-width: 1280px; padding: 0 40px; margin: 0 auto;}
+            .main-hotBrand .hotBrand-title { width: 24.4rem; margin-right: 4.44rem; text-align: left; flex: none;}
+            .main-hotBrand .sticky{position: sticky; top: 100px; z-index: 100; transform: none !important; background: #5D2859;}
+            .main-hotBrand .hotBrand-title p{margin-top: 1.78rem;}
+            .main-hotBrand .hotBrand-contents{align-self: auto;}
+            .hotBrand-list{margin-top: 0; margin-bottom: -3.56rem; }
+            .hotBrand-list .hotBrand-item a{margin: 0 1.11rem 3.56rem; display: block;}
+            .hotBrand-list .hotBrand-item strong{font-size: 22px;}
+            .hotBrand-list .hotBrand-item p{font-size: 1rem;}
+            
+        }
+        @media (min-width: 768px) {
+            .hotBrand-list .hotBrand-item {
+                flex-basis: 50%;
+            }
+        }
+    </style>
+    
+    
+    
+    
+    <section class="main-hotBrand">
+        <div class="inner">
+            <div class="hotBrand-title">
+                <div class="sticky">
+                    <h3>지금<i class="icoEmoji">🔥</i>Hot 한 <br class="RPB RMB">그 브랜드도 카페24!</h3>
+                    <p>네, 맞아요. 여기가 바로 쇼핑몰 맛집입니다.<br>
+                        200만 개 브랜드가 선택한 카페24,<br class="RPB RMB">
+                        지금 경험해 보세요.</p>
+                </div>
+            </div>
+            <div class="hotBrand-contents">
+                <div class="hotBrand-list">
+                    <div class="hotBrand-item">
+                        <a href="https://nonfiction.com//" target="_blank">
+                            <div class="thumb">
+                                <picture>
+                                    <source srcset="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_nonfiction.webp" type="image/webp">
+                                    <img src="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_nonfiction.jpg" alt="" loading="lazy" width="100%" height="100%">
+                                &nbsp;</picture>
+                            </div>
+                            <div class="desc">
+                                <strong>논픽션<i class="icoTarget"></i></strong>
+                                <p>향을 매개로 내면의 힘을 표현하는 라이프스타일 뷰티 브랜드</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hotBrand-item">
+                        <a href="https://ygselect.com/" target="_blank">
+                            <div class="thumb">
+                                <picture>
+                                    <source srcset="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_yg.webp" type="image/webp">
+                                    <img src="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_yg.jpg" alt="" loading="lazy" width="100%" height="100%">
+                                &nbsp;</picture>
+                            </div>
+                            <div class="desc">
+                                <strong>YG SELECT<i class="icoTarget"></i></strong>
+                                <p>YG소속 아티스트의 아이덴티티를 담은 MD 스토어</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hotBrand-item">
+                        <a href="https://www.smtownandstore.com/" target="_blank">
+                            <div class="thumb">
+                                <picture>
+                                    <source srcset="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_sm.webp" type="image/webp">
+                                    <img src="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_sm.jpg" alt="" loading="lazy" width="100%" height="100%">
+                                &nbsp;</picture>
+                            </div>
+                            <div class="desc">
+                                <strong>SMTOWN &amp;STORE<i class="icoTarget"></i></strong>
+                                <p>SM소속 셀러브리티의 상품을 만날 수 있는 글로벌샵</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hotBrand-item">
+                        <a href="https://andar.co.kr/" target="_blank">
+                            <div class="thumb">
+                                <picture>
+                                    <source srcset="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_andar.webp" type="image/webp">
+                                    <img src="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_andar.jpg" alt="" loading="lazy" width="100%" height="100%">
+                                &nbsp;</picture>
+                            </div>
+                            <div class="desc">
+                                <strong>안다르<i class="icoTarget"></i></strong>
+                                <p>K애슬레저 리딩 브랜드</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hotBrand-item">
+                        <a href="https://66girls.co.kr/" target="_blank">
+                            <div class="thumb">
+                                <picture>
+                                    <source srcset="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_66.webp" type="image/webp">
+                                    <img src="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_66.jpg" alt="" loading="lazy" width="100%" height="100%">
+                                &nbsp;</picture>
+                            </div>
+                            <div class="desc">
+                                <strong>육육걸즈<i class="icoTarget"></i></strong>
+                                <p>‘좋은 옷’ 을 고민하는 여성의류 브랜드</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hotBrand-item">
+                        <a href="https://spao.com/" target="_blank">
+                            <div class="thumb">
+                                <picture>
+                                    <source srcset="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_spao.webp" type="image/webp">
+                                    <img src="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_spao.jpg" alt="" loading="lazy" width="100%" height="100%">
+                                &nbsp;</picture>
+                            </div>
+                            <div class="desc">
+                                <strong>SPAO<i class="icoTarget"></i></strong>
+                                <p>대한민국 대표 SPA 패션 브랜드</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hotBrand-item">
+                        <a href="https://ozkiz.com/" target="_blank">
+                            <div class="thumb">
+                                <picture>
+                                    <source srcset="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_ozkiz.webp" type="image/webp">
+                                    <img src="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_ozkiz.jpg" alt="" loading="lazy" width="100%" height="100%">
+                                &nbsp;</picture>
+                            </div>
+                            <div class="desc">
+                                <strong>오즈키즈<i class="icoTarget"></i></strong>
+                                <p>아동복 쇼핑몰 1위 브랜드</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hotBrand-item">
+                        <a href="https://bodyluv.kr/" target="_blank">
+                            <div class="thumb">
+                                <picture>
+                                    <source srcset="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_bodyluv.webp" type="image/webp">
+                                    <img src="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_bodyluv.jpg" alt="" loading="lazy" width="100%" height="100%">
+                                &nbsp;</picture>
+                            </div>
+                            <div class="desc">
+                                <strong>바디럽<i class="icoTarget"></i></strong>
+                                <p>물부터 숙면까지 삶의 질을 높이는 라이프 스타일 브랜드</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hotBrand-item">
+                        <a href="https://marketb.kr/" target="_blank">
+                            <div class="thumb">
+                                <picture>
+                                    <source srcset="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_marketb.webp" type="image/webp">
+                                    <img src="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_marketb.jpg" alt="" loading="lazy" width="100%" height="100%">
+                                &nbsp;</picture>
+                            </div>
+                            <div class="desc">
+                                <strong>마켓비<i class="icoTarget"></i></strong>
+                                <p>천만 고객이 선택한 홈퍼니싱 가구 브랜드</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hotBrand-item">
+                        <a href="https://kundal.co.kr/" target="_blank">
+                            <div class="thumb">
+                                <picture>
+                                    <source srcset="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_kundal.webp" type="image/webp">
+                                    <img src="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_kundal.jpg" alt="" loading="lazy" width="100%" height="100%">
+                                &nbsp;</picture>
+                            </div>
+                            <div class="desc">
+                                <strong>쿤달<i class="icoTarget"></i></strong>
+                                <p>아름다운 향기와 자연 유래 성분을 담은 코스메틱 브랜드</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hotBrand-item">
+                        <a href="https://themedicube.co.kr/" target="_blank">
+                            <div class="thumb">
+                                <picture>
+                                    <source srcset="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_medicube.webp" type="image/webp">
+                                    <img src="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_medicube.jpg" alt="" loading="lazy" width="100%" height="100%">
+                                &nbsp;</picture>
+                            </div>
+                            <div class="desc">
+                                <strong>메디큐브<i class="icoTarget"></i></strong>
+                                <p>임상시험을 완료한 믿고 쓸 수 있는 안전한 화장품 브랜드</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hotBrand-item">
+                        <a href="http://mybany.com/" target="_blank">
+                            <div class="thumb">
+                                <picture>
+                                    <source srcset="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_mybany.webp" type="image/webp">
+                                    <img src="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_mybany.jpg" alt="" loading="lazy" width="100%" height="100%">
+                                &nbsp;</picture>
+                            </div>
+                            <div class="desc">
+                                <strong>마이바니<i class="icoTarget"></i></strong>
+                                <p>인플루언서 조민영의 여성 패션, 토탈 뷰티케어 브랜드</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="mButton gCenter RTB RMB">
+                    <button class="txtLink">더보기<i class="icoArrow"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

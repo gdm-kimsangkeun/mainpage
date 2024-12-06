@@ -1,0 +1,186 @@
+@charset "utf-8";
+/* *******************************************************
+ * filename : main.css
+ * description : 메인 레이아웃 및 컨텐츠 CSS
+ * date : 2020-11-25
+******************************************************** */
+
+/* ******************  메인 비주얼 ********************** */
+#mainVisual{overflow:hidden; width:100%; height:1000px; height:100vh; position:relative;}	/* 비주얼높이값 이미지에맞게 수정 */
+/* 메인 비주얼 :: 영상영역 */
+.background-video-wrapper{position:relative; overflow:hidden; height:100vh; width:100%; background-color:#000;}
+.background-video{position:absolute; top:0; left:0px; width:100%; height:100%}
+.background-video iframe{
+	width: 100vw;
+	height: calc(56.25vw + 420px); /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+	min-height: calc(100vh + 340px);
+	min-width: 177.77vh;  /*Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	pointer-events:none;
+	opacity:0;filter:Alpha(opacity=0); 
+	transition: opacity 3s 0.2s;
+}
+.background-video.start iframe{opacity:1;filter:Alpha(opacity=100);}
+body.is-mobile .background-video iframe {pointer-events:auto;}
+
+/* ******************  메인 컨텐츠 :: 공통 ********************** */
+/* 공통 :: 타이틀 */
+.main-tit-box .main-tit{color:#000; font-size:54px; font-weight:400; line-height:1.2962em; letter-spacing: -0.046296em;}
+.main-btn {display:inline-block; padding:24px 30px; font-size:16px; color: #fff; font-weight:500; letter-spacing: -0.65px; background-color: #424242; border-radius:20px; transition: all 0.3s; box-shadow:10px 10px 20px rgba(0, 0, 0,0.19); overflow:hidden; -webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+ box-sizing: border-box; } 
+.main-btn span {display:inline-block; vertical-align:inherit;}
+.main-btn i {display:inline-block; vertical-align:inherit; font-size:16px; margin-left:30px;}
+.main-btn.style02 {background-color: #ffcc4c; border-color:#ffcc4c; color: #fff;}
+.main-btn:before {content: ''; box-sizing: border-box; position: absolute; top: -40%; right: 110%; width: 30px; height: 200%; background: rgba(255, 255, 255, 0.3); transform: rotate( 20deg );}
+
+/* ******************  메인 컨텐츠 :: Business ********************** */
+#mainBusinessCon {padding:175px 0 142px;}
+.main-business-con {margin-top:47px;}
+.main-business-list {display:flex; margin-left:-44px;}
+.main-business-list li { width:25%; }
+.main-business-list li a {position:relative; display:block; padding:70px 20px 70px 44px; transform:translate(0,0); transition: transform 0.4s;}
+.main-business-list li a:before {content:""; width:100%; height:100%; position:absolute; left:0; top:0; background-color: #ffcc4c; border-radius:20px; opacity:0; transition: all 0.3s; box-shadow:10px 15px 20px rgba(0, 0, 0,0.19);}
+.main-business-item {position:relative;}
+.main-business-item .icon-box {position:relative;  height:49px;}
+.main-business-item .icon {display:block; width:100%; height:100%; background:no-repeat; position:absolute; top:0; left:0;transition: opacity 0.4s;}
+.main-business-item .icon.on {opacity:0;}
+.main-business-item .tit {display:block; font-size:26px; letter-spacing: -0.025em; line-height:1.3; color: #000; font-weight:300; margin-top:40px; transition: all 0.4s;}
+.main-business-item .txt {font-size:18px; letter-spacing: -0.03611em; line-height:1.55; color: #939393; font-weight:300; margin-top:40px; transition: all 0.4s;}
+.main-business-item .more {display:block; font-size:15px; line-height:1.55; color: #000; font-weight:700; margin-top:48px; transition: all 0.4s;}
+
+/* ******************  메인 컨텐츠 :: Brand ********************** */
+#mainBrandCon {background-color: #f5f5f5;}
+.main-brand-con {position:relative;}
+.main-brand-con .txt-box {position:relative; padding:125px 0 110px; z-index:2;}
+.main-brand-con .txt-box .con-box {width:50%; }
+.main-brand-con .txt-box .list-box {margin:60px -35px 0 -65px; }
+.main-brand-con .img-box {position:absolute; left:50%; top:0; width:50%; height:100%;}
+.main-brand-con .img-box .inner-box {position:relative; height:100%;}
+.main-brand-con .img-box .img-wrap {position:absolute; width:100%; height:100%; background:no-repeat center / cover; transition: all 0.4s ease-in-out;}
+.main-brand-list li {margin-top:20px;}
+.main-brand-list li:first-child {margin-top:0;}
+.main-brand-list a {position:relative; display:block; padding:20px 120px 20px 60px;}
+.main-brand-list a:before {content:""; position:absolute; top:0; left:0; width:100%; height:100%; background-color: #ffcc4c;  border-radius:20px; opacity:0; transition: all 0.3s; box-shadow:10px 15px 20px rgba(0, 0, 0,0.19);}
+.main-brand-list dl {display:flex; align-items:center; position:relative; left:-10px; transition: all 0.4s; }
+.main-brand-list dt {position:relative; width:83px; height:93px; margin-right:35px; }
+.main-brand-list .icon {display:block; position:absolute; width:100%; height:100%; top:0; left:0; background: no-repeat center; transition: all 0.3s; }
+.main-brand-list .icon.on {opacity:0;}
+.main-brand-list dd {width:calc(100% - 83px - 35px);}
+.main-brand-list .tit {font-size:28px; letter-spacing:-0.02321em; color: #000 ;font-weight:300; transition: all 0.3s; }
+.main-brand-list .txt {font-size:18px; letter-spacing:-0.03611em; line-height:1.55; color: #939393; font-weight:300; margin-top:12px; transition: all 0.3s; }
+.main-brand-list .arrow {position:absolute; width:60px; height:60px; background-color:#fff; border-radius:50%; text-align:center; top:50%; margin-top:-30px; right:75px; opacity:0; transition: all 0.4s; }
+.main-brand-list .arrow i {font-size:24px; line-height:59px; color: #000;}
+
+
+/* ******************  메인 컨텐츠 :: History ********************** */
+#mainHistoryCon {padding-top:170px;}
+.main-history-con .main-tit-box {position:relative; padding-right:200px;}
+.main-history-con .main-btn {position:absolute; right:0; top:50%; transform:translateY(-50%);} 
+.main-history-con .con-box {margin-top:100px;}
+.main-history-slide .slick-list {overflow-x: hidden;}
+.main-history-slide .slick-arrow {position:absolute; right:0; z-index:99; font-size:24px; color: #8e8e8e; transition: color 0.3s;}
+.main-history-slide .slick-arrow.slick-prev {top:30px;}
+.main-history-slide .slick-arrow.slick-next {top:100px;}
+.main-history-item .period-box {position:relative; display:flex; justify-content:space-between; align-items:center; border-bottom:2px solid #dedede; transition: padding-left 0.3s;}
+.main-history-item .period-box:before {content:""; width:0; height:2px; background-color:#ffcc4c; position:absolute; left:0; bottom:-2px; transition: all 0.8s;}
+.main-history-item .period-box:after {content:""; position:absolute; left:0; bottom:-6px; width:11px; height:11px; border:2px solid #424242; background-color:#fff; border-radius:50%; -webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+ box-sizing: border-box; }
+.main-history-item .period-box .icon {position:relative; width:156px; height:86px; margin-bottom:-2px;}
+.main-history-item .period-box .icon span {display:block; position:absolute; top:0; left:0; width:100%; height:100%; background:left bottom no-repeat; transition: all 0.3s 0.3s;}
+.main-history-item .period-box .icon .on {opacity:0;}
+.main-history-item .period-box .period {font-size:30px; letter-spacing: -0.022em; color: #424242; font-weight:700; transition: all 0.3s;}
+.main-history-item .year-item {font-size:18px; color: #6b6b6b; letter-spacing: -0.03611em; margin-top:16px;transition: padding-left 0.3s; }
+.main-history-item .year-item:first-child {margin-top:35px;}
+.main-history-item .year-item .year {font-weight:700; }
+.main-history-item .year-item .txt {font-weight:300; line-height:1.3; margin-top:12px; }
+.main-history-item .year-item .txt-box {margin-top:14px;}
+.main-history-con .btn-box {display:none;}
+
+.main-history-slide li {width:434px;}
+.main-history-slide li.slick-current .main-history-item .period-box:before {width:100%}
+.main-history-slide li.slick-current .main-history-item .period-box:after {border-color:#ffcc4c;}
+.main-history-slide li.slick-current .main-history-item .period-box .icon .off {opacity:0;}
+.main-history-slide li.slick-current .main-history-item .period-box .icon .on {opacity:1;}
+.main-history-slide li.slick-current .main-history-item .period-box .period {color: #ffcc4c;}
+
+@media all and (max-width:1360px){
+	.main-history-slide li {width:31.9118vw;}
+}
+
+/* ******************  메인 컨텐츠 :: News ********************** */
+#mainNewsCon {padding-top:220px;}
+.main-news-con .main-tit-box, .main-Youtube-con .main-tit-box {display:flex; justify-content: space-between; align-items: flex-end;}
+.main-news-con .main-tit-box  h2 {width:calc(100% - 100px);}
+.main-news-con .main-tit-box .more-btn, .main-Youtube-con .main-tit-box .more-btn, .main-Youtube-con .more-btn  {display:block; font-size:15px; color: #000; font-weight:700; transition: color 0.3s; margin-bottom:10px;}
+.main-news-con .list-box {margin-top:70px;}
+.main-news-con .main-news-swiper {padding-right:10px; margin-right:-10px;}
+.main-news-list .img-wrap {display:block; position:relative; padding-top:75.5%;}
+.main-news-list .img-wrap:before {content:""; width:100%; height:100%; background:#ffcc4c; position:absolute; top:0; left:0; transition: all 0.3s;}
+.main-news-list .tit {display:block; font-size:22px; letter-spacing:-0.02954em; color: #000; font-weight:300; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; margin-top:25px;}
+.main-news-list .date {display:block; font-size:15px; color: #939393; margin-top:15px;}
+.main-news-con .main-news-swiper-controls {display:flex; justify-content:center; align-items:center; margin-top:50px;}
+.main-news-con .main-news-swiper-controls .swiper-scrollbar {position:relative; width:242px; height:1px; background-color:#d5d5d5; margin-right:30px;}
+.main-news-con .main-news-swiper-controls .swiper-scrollbar-drag {height:4px; background-color:#505050; margin-top:-1.5px;}
+.main-news-con .main-news-swiper-controls i {font-size:30px; color: #5a5a5a;}
+#mainYoutube{
+	padding: 220px 0 140px;
+}
+#mainYoutube .list-box{
+	margin-top: 70px;
+}
+.video_gridBox{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 100%;
+	gap: 15px;
+}
+.video_gridBox .gridItem img{
+	border-radius: 10px;
+	width: 100%;
+}
+.gridItem{
+	overflow: hidden;
+	border-radius: 10px;   
+  }
+  
+  .gridItem img{
+	object-fit:cover;     
+	transform:scale(1.0);        
+	transition: transform .5s; 
+  }
+  
+  .gridItem img:hover{ 
+	transform:scale(1.3);
+	transition: transform .5s;
+  }
+/* ******************  메인 컨텐츠 :: Inquiry ********************** */
+#mainInquiryCon {padding:150px 0 115px; background-image: url("/static/img/bg2.png");}
+.main-inquiry-con {position:relative; display:flex; flex-direction:column-reverse; }
+.main-inquiry-con .img-box {position:absolute; right:0; width:51.16%; height:587px; top:0; background-color:beige; background:url("/static/img/main_inquiry_img.jpg") no-repeat center / cover; }
+.main-inquiry-con .txt-box { text-align: center;}
+.main-inquiry-con .txt-box .con-box {width:auto; padding-right:100px; -webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+ box-sizing: border-box; }
+.main-inquiry-con .txt-box .txt {font-size:18px; letter-spacing: -0.03611em; font-weight:300; line-height:1.55em; color: #000; margin-top:30px;}
+.main-inquiry-con .txt-box .mail {display:inline-block; margin-top:25px; overflow:hidden;}
+.main-inquiry-con .txt-box .mail .inner {display:block; margin-bottom:-35px;}
+.main-inquiry-con .txt-box .mail .txt {display:inline-block; font-size:15px; font-weight:700; color: #000; margin-left:15px; letter-spacing: 0;}
+.main-inquiry-con .txt-box .mail i {width:35px; height:35px; background-color:#ececec; border-radius:50%; line-height:35px; font-size:16px; color: #000; text-align:center; font-weight:700; }
+.main-inquiry-con .txt-box .btn-box {display:flex; margin:77px -7px 0; justify-content: center;}
+.main-inquiry-con .txt-box .btn-box .main-btn {display:flex; justify-content:space-between; align-items:center; position:relative; gap: 30px; height:66px; line-height:1.3; margin:0 7px; padding:0 25px 0 35px; } 
+.main-inquiry-con .txt-box .btn-box .main-btn i {margin-left:0;}
+.main-inquiry-con .main-tit-box.animated .mail .inner {animation: 0.8s linear hiddenTxt forwards 0.5s;} 
+@keyframes hiddenTxt {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    margin-bottom: 0;
+    opacity: 1;
+  }
+}
