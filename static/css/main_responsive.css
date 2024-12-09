@@ -24,7 +24,7 @@
 /* ******************  메인 컨텐츠 :: Business ********************** */
 @media all and (min-width:1025px){
 	.main-business-list li:hover a {transform:translate(-10px,-10px);}
-	.main-business-list li a:hover:before {opacity:1;}
+	.main-business-list li a:hover:before {opacity:.8;}
 	.main-business-list li a:hover .icon.on {opacity:1;}
 	.main-business-list li a:hover .icon.off {opacity:0;}
 	.main-business-list li a:hover .tit ,  
@@ -50,7 +50,7 @@
 	.main-business-item .tit {font-size:19px; margin-top:15px;}
 	.main-business-item .txt {font-size:14px; margin-top:19px;}
 	.main-business-item .more {margin-top:10px;}
-	.main-business-item .icon-box {height:36.4px;}
+	.main-business-item .icon-box {height:70px;}
 	.main-business-item .icon-box .icon {background-size:auto 100%;}
 }
 @media all and (max-width:359px){

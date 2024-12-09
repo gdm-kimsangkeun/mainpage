@@ -117,7 +117,7 @@ animation: upDown 1.5s ease-in-out infinite;}
 .cm-tit {font-size:3.375em; letter-spacing: -0.01203em; line-height:1.29; color: #000; font-weight:100;}
 .cm-tit-02 {font-size:2em; letter-spacing: -0.04em; line-height:1.5; color: #000; font-weight:300;}
 .cm-txt {font-size:1.125em; letter-spacing: -0.04722em; line-height:1.77; color: #939393; font-weight:300;}
-.red-txt {color: #bf1e2e;}
+.red-txt {color: #ffcc4c;}
 
 /* -------- 인사말 -------- */
 .greeting-con .tit-box .cm-txt {margin-top:2.22em;}
@@ -150,7 +150,7 @@ animation: upDown 1.5s ease-in-out infinite;}
 	  transform: scale(1.1) rotate(0.002deg);
 }
 .management-list li dd {margin-top:2.375em;}
-.management-list li b {font-size:1em; color: #bf1e2e; font-weight:800;}
+.management-list li b {font-size:1em; color: #ffcc4c; font-weight:800;}
 .management-list li .tit {display:block; font-size:2em; letter-spacing: -0.02031em; line-height:1.125; color: #000;  font-weight:300; margin-top:0.25em;}
 .management-list li .cm-txt {margin-top:1.125em;}
 
@@ -165,10 +165,10 @@ animation: upDown 1.5s ease-in-out infinite;}
 .recruit-process-list li:nth-child(odd) {background-color:#f7f7f7;}
 .recruit-process-list li dt {width:45.65%; min-width:75px; margin:0 auto;}
 .recruit-process-list li .icon {display:block;  padding-top:100%; background: no-repeat center / 100%; }
-.recruit-process-list li .num {display:block; font-size:1.5em; color: #bf1e2e; letter-spacing: -0.0625em; font-weight:700; font-style:italic; margin-top:1.66em;}
+.recruit-process-list li .num {display:block; font-size:1.5em; color: #ffcc4c; letter-spacing: -0.0625em; font-weight:700; font-style:italic; margin-top:1.66em;}
 .recruit-process-list li .txt { font-size:1.4375em; line-height:1.3; color: #000; letter-spacing: -0.02826em; font-weight:500; margin-top:0.4347em;}
 .recruit-con .txt-box {margin-top:5.75em;}
-.recruit-con .txt-box .tit {display:block; font-size:1.125em; letter-spacing:-0.0333em; color: #bf1e2e; font-weight:500; }
+.recruit-con .txt-box .tit {display:block; font-size:1.125em; letter-spacing:-0.0333em; color: #ffcc4c; font-weight:500; }
 .recruit-con .txt-box .tit i {font-size:1.166em; margin-right:10px; line-height:0.8571em; vertical-align:bottom;}
 .recruit-con .txt-box .txt-list {margin-top:1.25em;}
 .recruit-con .txt-box .cm-txt {display:inline-block; position:relative; padding-left:15px; }
@@ -177,7 +177,7 @@ animation: upDown 1.5s ease-in-out infinite;}
 
 /* -------- 회사연혁 -------- */
 .history-title-box{margin-bottom: 100px;}
-.history-title-box strong{display: block; margin-bottom:20px; font-size: 24px; color: #bf1e2e}
+.history-title-box strong{display: block; margin-bottom:20px; font-size: 24px; color: #ffcc4c}
 .history-title-box h3{font-size: 54px; font-weight: 100; color: #000; letter-spacing: -2.5px; line-height: 1.4;}
 .history-list-box-style02 .history-year-box{position:relative; display: flex; flex-wrap: wrap; justify-content: space-between; padding-bottom: 180px}
 .history-list-box-style02 .history-year-box:before,
@@ -203,9 +203,9 @@ animation: upDown 1.5s ease-in-out infinite;}
 .history-list-box-style02 .history-year-box .history-year-item .history-info-con p + p{margin-top: 10px;}
 /* over.ver */
 .history-list-box-style02 .history-year-box.over:before,
-.history-list-box-style02 .history-year-box.over .history-year-item:before{background-color: #bf1e2e}
-.history-list-box-style02 .history-year-box .history-year-item.over .history-year:after{background-color: #bf1e2e}
-.history-list-box-style02 .history-year-box .history-year-item.over .history-year:before{border-color:#bf1e2e}
+.history-list-box-style02 .history-year-box.over .history-year-item:before{background-color: #ffcc4c}
+.history-list-box-style02 .history-year-box .history-year-item.over .history-year:after{background-color: #ffcc4c}
+.history-list-box-style02 .history-year-box .history-year-item.over .history-year:before{border-color:#ffcc4c}
 /* -------- 조직도 -------- */
 .org-page{position: relative; text-align: center;}
 .org-page:before{content: ""; position: absolute; bottom: -100px; left: 50%; margin-left: -951px; width: 1090px; height: 670px; background: url(/images/content/org_point_bg.png) left/contain no-repeat;}
@@ -218,7 +218,7 @@ animation: upDown 1.5s ease-in-out infinite;}
 .org-list li:first-child:after{left: 50%;} .org-list li:last-child:after{right: 50%;}
 .org-list .department-con{position: relative; padding: 80px 10px 40px; margin-bottom: 30px; background-color: #fff; -webkit-box-shadow: 20px 20px 40px rgba(0,0,0,.15);box-shadow: 20px 20px 40px rgba(0,0,0,.15);}
 .org-list .department-con .icon-box{position: absolute; top: -50px; left: 50%; transform:translateX(-50%); width: 115px; height: 115px; border-radius: 50%; background-color: #fff; border: 1px dashed #a7a5a6}
-.org-list .department-con .icon-box span{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: calc(100% - 15px); height: calc(100% - 15px); border-radius: 50%; background: #bf1e2e center no-repeat; -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+.org-list .department-con .icon-box span{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: calc(100% - 15px); height: calc(100% - 15px); border-radius: 50%; background: #ffcc4c center no-repeat; -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
 .org-list .department-con .icon01 span{background-image: url(/images/icon/org_icon01.png);}
 .org-list .department-con .icon02 span{background-image: url(/images/icon/org_icon02.png);}
 .org-list .department-con .icon03 span{background-image: url(/images/icon/org_icon03.png);}
@@ -324,7 +324,7 @@ animation: upDown 1.5s ease-in-out infinite;}
 	-webkit-animation: nation-circle 4s cubic-bezier(0.22, 0.61, 0.36, 0.5) infinite;
 	animation: nation-circle 4s cubic-bezier(1, 2, 0.66, 3) infinite; 
 }
-.global-network-con .spot-box i{display:block; position:absolute; z-index: 1; top:0; left:0; margin: 56px 56px; width:8px; height:8px; background-color:#bf1e2e; border-radius:50%;}
+.global-network-con .spot-box i{display:block; position:absolute; z-index: 1; top:0; left:0; margin: 56px 56px; width:8px; height:8px; background-color:#ffcc4c; border-radius:50%;}
 @keyframes nation-circle {
   0% {
 	-webkit-transform: scale(0);
@@ -388,7 +388,7 @@ animation: upDown 1.5s ease-in-out infinite;}
 .brand-inner-con .brand-tit strong{padding-right: 10px; font-size: 40px; font-weight: 600;}
 .brand-inner-con .brand-tit em{font-size: 18px; font-weight: 300;}
 .brand-inner-con .brand-txt{margin-top: 15px; font-size: 24px; font-weight: 300;}
-.brand-inner-con .link-btn{position: relative; display: block; margin-top: 80px; padding: 0 30px; width: 209px; height: 65px; line-height: 65px; background-color: #bf1e2e; border-radius: 20px; -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box; font-size: 16px; font-weight: 500; color: #fff; overflow:hidden;}  
+.brand-inner-con .link-btn{position: relative; display: block; margin-top: 80px; padding: 0 30px; width: 209px; height: 65px; line-height: 65px; background-color: #ffcc4c; border-radius: 20px; -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box; font-size: 16px; font-weight: 500; color: #fff; overflow:hidden;}  
 .brand-inner-con .link-btn:before{content: "\e93f"; position: absolute; font-family: xeicon; top: 50%; transform:translateY(-50%); right: 25px; font-size: 20px; color: #fff;}
 .brand-inner-con .link-btn:after {content: ''; box-sizing: border-box; position: absolute; top: -40%; right: 110%; width: 30px; height: 200%; background: rgba(255, 255, 255, 0.3); transform: rotate( 20deg );}
 @media all and (min-width:801px){
@@ -425,7 +425,7 @@ animation: upDown 1.5s ease-in-out infinite;}
 
 .select-input .bbs-search-btn{font-size:20px; padding-right:15px; vertical-align:middle;}
 /* 목록버튼 */
-.cm-btn-controls .btn-style04 {width:200px; height:58px; line-height:57px; box-sizing:border-box; background-color: #bf1e2e;  border: 1px solid transparent;  color: #fff; font-size:18px; font-weight:500; border-radius:20px;  transition: all 0.4s; }
+.cm-btn-controls .btn-style04 {width:200px; height:58px; line-height:57px; box-sizing:border-box; background-color: #ffcc4c;  border: 1px solid transparent;  color: #fff; font-size:18px; font-weight:500; border-radius:20px;  transition: all 0.4s; }
 @media all and (min-width:801px){
-	.cm-btn-controls .btn-style04:hover {background-color:#fff; color: #bf1e2e; border-color: #bf1e2e;}
+	.cm-btn-controls .btn-style04:hover {background-color:#fff; color: #ffcc4c; border-color: #ffcc4c;}
 }

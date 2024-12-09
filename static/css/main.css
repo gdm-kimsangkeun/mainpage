@@ -140,12 +140,12 @@ body.is-mobile .background-video iframe {pointer-events:auto;}
 	gap: 15px;
 }
 .video_gridBox .gridItem img{
-	border-radius: 10px;
+	
 	width: 100%;
 }
 .gridItem{
 	overflow: hidden;
-	border-radius: 10px;   
+	   
   }
   
   .gridItem img{

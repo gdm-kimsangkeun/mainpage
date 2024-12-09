@@ -62,7 +62,9 @@
 <script type="text/javascript" src="/static/js/jquery-1.8.3.min.js"></script>
 <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
 </head>
-
+<style>
+	b{color: #ffcc4c;}
+</style>
 <body>
 <!-- accessibility -->
 <div class="cm-accessibility">
@@ -81,8 +83,8 @@
 				<h1 class="logo">
 					<a href="https://www.e-kano.com/kr/">
 						<em class="blind">메인으로</em>
-						<img src="/static/img/logo.png" alt="카노" class="default"/>
-						<img src="/static/img/logo_color.png" alt="카노" class="color"/>
+						<img src="/static/img/logo_on.png" alt="카노" class="default"/>
+						<img src="/static/img/logo_off.png" alt="카노" class="color"/>
 					</a>
 				</h1>
 				<div class="header-util-box">
@@ -183,7 +185,7 @@
 		<div class="sitemap-top-box">
 			<div class="area-box">
 			<div class="inner">
-		<h1 class="sitemap-logo"><em class="blind">메인으로</em><a href="/"><img src="https://www.e-kano.com/images/common/logo_color.png" alt="카노"/></a></h1>
+		<h1 class="sitemap-logo"><em class="blind">메인으로</em><a href="/"><img src="/static/img/logo_on.png" alt="카노"/></a></h1>
 		<div class="sitemap-top-unit">
 			<!-- 언어 선택 리스트 -->
 			<ul class="sitemap-lang">
@@ -334,21 +336,21 @@
 	<div id="mainContainer">
 		<!-- ****************** 메인비주얼 ********************** -->
 		 <!-- 메인 비주얼 높이 full height  -->
-		<!-- <section id="mainVisual" class="full-height">
+		 <section id="mainVisual" class="full-height">
 			<article class="background-video-wrapper">
 				<div class="background-video start">
 					<iframe class="videoIframe" id="visualVideo"   src="https://player.vimeo.com/video/646701674?h=e73e0f208c&badge=0&background=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1&quality=1080p" 
 	width="100%" height="100%" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" title="카노 Brand film" tabindex="-1"></iframe>
 				</div>
 			</article>
-		</section> -->
+		</section> 
 		<!-- ****************** 메인컨텐츠 ********************** -->
 		<section id="mainContent">
 			<!-- ****************** Business ********************** -->
-			<article id="mainBusinessCon" style="background:url('/static/img/main_business_bg.jpg') no-repeat right / cover;">
+			<article id="mainBusinessCon" style="background:url('/static/img/main_business_bg1.jpg') no-repeat right / cover;">
 				<div class="area">
 					<div class="main-tit-box">
-						<h2 class="main-tit" data-scroll="fade-right">골드닥터스는 <br class="m-br"><b style="color: #ffcc4c;">어떤 가치</b>를 만들어내나요?</h2>
+						<h2 class="main-tit" data-scroll="fade-right">골드닥터스는 <br class="m-br"><b><br>어떤 가치를 만들어내나요?</h2>
 					</div>
 					<div class="main-business-con">
 						<ul class="main-business-list">
@@ -356,9 +358,11 @@
 								<a href="https://www.e-kano.com/kr/business/maketing.php">
 									<div class="main-business-item">
 										<div class="icon-box">
-											<svg viewBox="0 0 1320 300" class="pc">
+											<!-- <svg viewBox="0 0 1320 300" class="pc">
 												<text x="40%" y="60%" dy="40px" text-anchor="middle">blog</text>
-											  </svg>
+											  </svg> -->
+											  <!-- <span class="icon" style="background-image:url('/static/img/icon_01.gif');"></span> -->
+											   <span><img src="static/img/icon-01-unscreen.gif" alt="" height="70px"></span>
 											<!-- <span class="icon off" style="background-image:url('/static/img/main_business_icon_01.png');"></span> -->
 											<!-- <span class="icon on" style="background-image:url('/static/img/main_business_icon_on_01.png');"></span> -->
 										</div>
@@ -376,9 +380,10 @@
 								<a href="https://www.e-kano.com/kr/business/develop.php">
 									<div class="main-business-item">
 										<div class="icon-box">
-											<svg viewBox="0 0 1320 300" class="pc">
+											<!-- <svg viewBox="0 0 1320 300" class="pc">
 												<text x="40%" y="60%" dy="40px" text-anchor="middle">planning</text>
-											  </svg>
+											  </svg> -->
+											  <span><img src="static/img/icon-02-unscreen.gif" alt="" height="70px"></span>
 											<!-- <span class="icon off" style="background-image:url('/static/img/main_business_icon_02.png');"></span>
 											<span class="icon on" style="background-image:url('/static/img/main_business_icon_on_02.png');"></span> -->
 										</div>
@@ -396,9 +401,10 @@
 								<a href="https://www.e-kano.com/kr/business/local_network.php">
 									<div class="main-business-item">
 										<div class="icon-box">
-											<svg viewBox="0 0 1320 300" class="pc">
+											<!-- <svg viewBox="0 0 1320 300" class="pc">
 												<text x="40%" y="60%" dy="40px" text-anchor="middle">design</text>
-											  </svg>
+											  </svg> -->
+											  <span><img src="static/img/icon-03-unscreen.gif" alt="" height="70px"></span>
 											<!-- <span class="icon off" style="background-image:url('/static/img/main_business_icon_03.png');"></span>
 											 	 <span class="icon on" style="background-image:url('/static/img/main_business_icon_on_03.png');"></span> -->
 										</div>
@@ -416,9 +422,10 @@
 								<a href="https://www.e-kano.com/kr/business/global_network.php">
 									<div class="main-business-item">
 										<div class="icon-box">
-											<svg viewBox="0 0 1320 300" class="pc">
+											<!-- <svg viewBox="0 0 1320 300" class="pc">
 												<text x="40%" y="60%" dy="40px" text-anchor="middle">promotion</text>
-											  </svg>
+											  </svg> -->
+											  <span><img src="static/img/icon-04-unscreen.gif" alt="" height="70px"></span>
 											<!-- <span class="icon off" style="background-image:url('/static/img/main_business_icon_04.png');"></span> -->
 											<!-- <span class="icon on" style="background-image:url('/static/img/main_business_icon_on_04.png');"></span> -->
 										</div>
@@ -438,9 +445,10 @@
 								<a href="https://www.e-kano.com/kr/business/maketing.php">
 									<div class="main-business-item">
 										<div class="icon-box">
-											<svg viewBox="0 0 1320 300" class="pc">
+											<!-- <svg viewBox="0 0 1320 300" class="pc">
 												<text x="40%" y="60%" dy="40px" text-anchor="middle">web</text>
-											  </svg>
+											  </svg> -->
+											  <span><img src="static/img/icon-05-unscreen.gif" alt="" height="70px"></span>
 											<!-- <span class="icon off" style="background-image:url('/static/img/main_business_icon_01.png');"></span> -->
 											<!-- <span class="icon on" style="background-image:url('/static/img/main_business_icon_on_01.png');"></span> -->
 										</div>
@@ -458,9 +466,10 @@
 								<a href="https://www.e-kano.com/kr/business/develop.php">
 									<div class="main-business-item">
 										<div class="icon-box">
-											<svg viewBox="0 0 1320 300" class="pc">
+											<!-- <svg viewBox="0 0 1320 300" class="pc">
 												<text x="40%" y="60%" dy="40px" text-anchor="middle">video &middot; sns</text>
-											  </svg>
+											  </svg> -->
+											  <span><img src="static/img/icon-06-unscreen.gif" alt="" height="70px"></span>
 											<!-- <span class="icon off" style="background-image:url('/static/img/main_business_icon_02.png');"></span> -->
 											<!-- <span class="icon on" style="background-image:url('/static/img/main_business_icon_on_02.png');"></span> -->
 										</div>
@@ -478,9 +487,10 @@
 								<a href="https://www.e-kano.com/kr/business/local_network.php">
 									<div class="main-business-item">
 										<div class="icon-box">
-											<svg viewBox="0 0 1320 300" class="pc">
+											<!-- <svg viewBox="0 0 1320 300" class="pc">
 												<text x="41%" y="60%" dy="40px" text-anchor="middle">consulting</text>
-											  </svg>
+											  </svg> -->
+											  <span><img src="static/img/icon-07-unscreen.gif" alt="" height="70px"></span>
 											<!-- <span class="icon off" style="background-image:url('/static/img/main_business_icon_03.png');"></span>
 											<span class="icon on" style="background-image:url('/static/img/main_business_icon_on_03.png');"></span> -->
 										</div>
@@ -534,9 +544,10 @@
   }
 }
 											</style>
-											<svg viewBox="0 0 1320 300" class="pc">
+											<!-- <svg viewBox="0 0 1320 300" class="pc">
 												<text x="40%" y="60%" dy="40px" text-anchor="middle">offline</text>
-											  </svg>
+											  </svg> -->
+											  <span><img src="static/img/icon-08-unscreen.gif" alt="" height="70px"></span>
 											<!-- <span class="icon off" style="background-image:url('/static/img/main_business_icon_04.png');"></span>
 											<span class="icon on" style="background-image:url('/static/img/main_business_icon_on_04.png');"></span> -->
 										</div>
@@ -559,7 +570,7 @@
 			<article id="mainBrandCon">
 				<div class="main-brand-con">
 					<div class="main-tit-box m-br">
-						<h2 class="main-tit" data-scroll="fade-right">골드닥터스만의 <br class=""> <b style="color: #ffcc4c;">차별화된 경쟁력</b></h2>
+						<h2 class="main-tit" data-scroll="fade-right">골드닥터스만의 <br class=""> <b>차별화된 경쟁력</b></h2>
 					</div>
 					<div class="img-box">
 						<div class="inner-box">
@@ -570,7 +581,7 @@
 						<div class="area">
 							<div class="con-box">
 								<div class="main-tit-box pc-br">
-									<h2 class="main-tit" data-scroll="fade-right">골드닥터스만의 <br class=""> <b style="color: #ffcc4c;">차별화된 경쟁력</h2>
+									<h2 class="main-tit" data-scroll="fade-right">골드닥터스만의 <br class=""> <b>차별화된 경쟁력</h2>
 								</div>
 								<div class="list-box">
 									<ul class="main-brand-list" data-rolling-time="2000" >
@@ -646,7 +657,7 @@
 				<div class="area">
 					<div class="main-history-con">
 						<div class="main-tit-box">
-							<h2 class="main-tit" data-scroll="fade-right"><b style="color:#ffcc4c">끝없는 혁신</b>을 만들어온 <br class="">골드닥터스의 여정</h2>
+							<h2 class="main-tit" data-scroll="fade-right"><b>끝없는 혁신</b>을 만들어온 <br class="">골드닥터스의 여정</h2>
 							<a href="https://www.e-kano.com/kr/company/history.php" class="main-btn" data-scroll="fade-left"><span>연혁 전체보기</span><i class="xi-angle-right-min"></i></a>
 						</div>
 						<div class="con-box">
@@ -939,8 +950,8 @@
 					<div class="main-Youtube-con">
 						<div class="main-tit-box">
 							<h2 class="main-tit" data-scroll="fade-right">
-								<b style="color: #ffcc4c;">성공을 입증한</b> <br class="m-br"> 골드닥터스의 비밀, 
-								<span class="pc-br">영상으로 만나보세요!</span>
+								<b>성공을 입증한</b>  골드닥터스의 비밀, <br>
+								영상으로 만나보세요!</span>
 							</h2>
 							
 						</div>
@@ -949,37 +960,37 @@
 								<div class="video_gridBox" data-scroll="fade-up" data-scroll-delay="400">
 									<div class="gridItem">
 										<a href="">
-											<img src="/static/img/item01.jpg" alt="">
+											<img src="/static/img/youtube_01.jpg" alt="">
 										</a>
 									</div>
 									<div class="gridItem">
 										<a href="">
-											<img src="/static/img/item01.jpg" alt="">
+											<img src="/static/img/youtube_01.jpg" alt="">
 										</a>
 									</div>
 									<div class="gridItem">
 										<a href="">
-											<img src="/static/img/item01.jpg" alt="">
+											<img src="/static/img/youtube_01.jpg" alt="">
 										</a>
 									</div>
 									<div class="gridItem">
 										<a href="">
-											<img src="/static/img/item01.jpg" alt="">
+											<img src="/static/img/youtube_01.jpg" alt="">
 										</a>
 									</div>
 									<div class="gridItem">
 										<a href="">
-											<img src="/static/img/item01.jpg" alt="">
+											<img src="/static/img/youtube_01.jpg" alt="">
 										</a>
 									</div>
 									<div class="gridItem">
 										<a href="">
-											<img src="/static/img/item01.jpg" alt="">
+											<img src="/static/img/youtube_01.jpg" alt="">
 										</a>
 									</div>
 								</div>
 							</div>
-							<div class="btn-box" data-scroll="fade-up"><a href="https://www.e-kano.com/kr/news/news.php" class="more-btn" >More View</a></div>
+							<div class="btn-box" data-scroll="fade-up"><a href="" class="more-btn" >More View</a></div>
 						</div>
 						
 					</div>
@@ -1132,8 +1143,8 @@
         /* flex-direction: row; */
         align-items: center;
         justify-content: space-between;
-        padding: 44px 0 0 0;
-        padding: 0 0.875rem;
+        padding: 140px 0 140px ;
+        /* padding: 0 0.875rem; */
     }
 
     .partner .titleArea {
@@ -1191,18 +1202,20 @@
     .titleArea .title {
     display: block;
     margin-bottom: 8px;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 34px;
     color: #235BF5;
     font-weight: 700;
+	text-align: center;
 }
 .titleArea .text {
     display: block;
-    margin-bottom: 24px;
-    font-size: 54px;
+    margin-bottom: 30px;
+    font-size: 29px;
     line-height: 1.3em;
     color: #000;
     font-weight: 400;
+	text-align: center;
 }
 .mPartner:before {
     top: -2px;
@@ -1243,14 +1256,32 @@
         height: 170px;
     }
     .titleArea .title {
-        margin-bottom: 24px;
+        margin-bottom: 20px;
     }
+	.titleArea .title {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 34px;
+    color: #235BF5;
+    font-weight: 700;
+	text-align: left;
+}
     .mPartnerList > li {
         min-height: 248px;
         gap: 16px;
         padding: 16px;
         border-radius: 20px;
     }
+	.titleArea .text {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 54px;
+    line-height: 1.3em;
+    color: #000;
+    font-weight: 400;
+	text-align: left;
+}
 }
    
 
@@ -1259,7 +1290,9 @@
       .mPartnersList {
         margin: 1.333rem -0.444rem 0;
     }
-
+		.mPartner{
+			padding: 0 15px;
+	}
     .mPartnersList .logo {
         padding: 0.889rem 0.444rem 0;
         box-sizing: border-box;
@@ -1295,8 +1328,8 @@
     /* flex-direction: row; */
     align-items: center;
     justify-content: space-between;
-    padding: 44px 0 0 0;
-    padding: 0 0.875rem;
+    /* padding: 44px 0 0 0; */
+    padding: 120px 0 60px;
 }
     }
 
@@ -1304,269 +1337,270 @@
       <section class="section partner" id="tabPartner">
         <div class="inner">
             <div class="titleArea">
-                <strong class="title">파트너</strong>
+                <strong class="title" style="color: #282d4b;">파트너</strong>
                 <h2 class="text">
-                    기업에서 원하는 다양한 니즈를 해결할 수 있는<br>
-                    검증된 파트너들을 매칭해 드려요
+                    <b>마케팅 하나로</b> 달라진 <br>병원의 이야기
                 </h2>
             </div>
             <div class="mPartner">
                 <div class="mPartnerItem">
                     <ul class="mPartnerList marqueeVerticalReverse">
                         <li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_designbook.svg" alt="디자인 교과서"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">디자인 교과서</strong>
-                                <p class="desc">패션, 화장품, 애완용품, 서적, 식품, 농축수산물 관련 구축 경험이 있는 디자인 전문 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li>
                         <li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_morenvy.svg" alt="모렌비"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">모렌비</strong>
-                                <p class="desc">패션, 화장품, 식품, 헬스케어, 굿즈 관련 구축 경험이 있는 디자인 전문 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li>
                         <li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_5gamstudio.svg" alt="5GAMSTUDIO"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">5GAMSTUDIO</strong>
-                                <p class="desc">패션, 굿즈 관련 구축 경험이 있는 디자인 전문 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li>
                         <li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_ing.svg" alt="아이앤지피플"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">아이앤지피플</strong>
-                                <p class="desc">패션, 굿즈 관련 구축 경험이 있는 디자인 전문 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li>
                         <li class="typeB">
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_kment.svg" alt="케이먼트코퍼레이션"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">케이먼트코퍼레이션</strong>
-                                <p class="desc">화장품, 패션, 식품 관련 구축 경험이 있는 디자인 전문 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li>
                         <li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_leadermine.svg" alt="리더마인"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">리더마인</strong>
-                                <p class="desc">패션, 화장품, 식품, 생활용품 관련 구축 경험이 있는 디자인 전문 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li>
                     <li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_designbook.svg" alt="디자인 교과서"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">디자인 교과서</strong>
-                                <p class="desc">패션, 화장품, 애완용품, 서적, 식품, 농축수산물 관련 구축 경험이 있는 디자인 전문 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li><li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_morenvy.svg" alt="모렌비"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">모렌비</strong>
-                                <p class="desc">패션, 화장품, 식품, 헬스케어, 굿즈 관련 구축 경험이 있는 디자인 전문 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li><li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_5gamstudio.svg" alt="5GAMSTUDIO"></div>
+							<div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">5GAMSTUDIO</strong>
-                                <p class="desc">패션, 굿즈 관련 구축 경험이 있는 디자인 전문 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li><li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_ing.svg" alt="아이앤지피플"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">아이앤지피플</strong>
-                                <p class="desc">패션, 굿즈 관련 구축 경험이 있는 디자인 전문 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li><li class="typeB">
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_kment.svg" alt="케이먼트코퍼레이션"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">케이먼트코퍼레이션</strong>
-                                <p class="desc">화장품, 패션, 식품 관련 구축 경험이 있는 디자인 전문 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li><li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_leadermine.svg" alt="리더마인"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">리더마인</strong>
-                                <p class="desc">패션, 화장품, 식품, 생활용품 관련 구축 경험이 있는 디자인 전문 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li></ul>
                 </div>
                 <div class="mPartnerItem">
                     <ul class="mPartnerList marqueeVertical">
                         <li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_designwib.svg" alt="디자인위브"></div>
+							<div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">디자인위브</strong>
-                                <p class="desc">패션, 화장품, 사무용품 관련 구축 경험이 있는 디자인 전문 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li>
                         <li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_musign.svg" alt="뮤자인"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">뮤자인</strong>
-                                <p class="desc">패션, 식품, 화장품 관련 구축 경험이 있는 SI 형태의 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li>
                         <li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_goodymall.svg" alt="굿디몰"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">굿디몰</strong>
-                                <p class="desc">패션, 식품, 잡화 관련 구축 경험이 있는 디자인 전문 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li>
                         <li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_withbrother.svg" alt="가치브라더"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">가치브라더</strong>
-                                <p class="desc">패션, 식품, 잡화 관련 구축 경험이 있는 디자인 전문 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li>
                         <li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_dinnerateight.svg" alt="디너앳에잇"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">디너앳에잇</strong>
-                                <p class="desc">화장품, 가구, 식품 관련 구축 경험이 있는 디자인 전문 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li>
                         <li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_sibizi.svg" alt="십이지"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">십이지</strong>
-                                <p class="desc">패션, 화장품, 반려동물, 식품 관련 구축 경험이 있는 SI 형태의 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li>
                         <li class="typeB">
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_dkbrothers.svg" alt="DK브라더스"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">DK브라더스</strong>
-                                <p class="desc">식품, 패션 관련 구축 경험이 있는 SI 형태의 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li>
                     <li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_designwib.svg" alt="디자인위브"></div>
+						<div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">디자인위브</strong>
-                                <p class="desc">패션, 화장품, 사무용품 관련 구축 경험이 있는 디자인 전문 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li><li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_musign.svg" alt="뮤자인"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">뮤자인</strong>
-                                <p class="desc">패션, 식품, 화장품 관련 구축 경험이 있는 SI 형태의 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li><li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_goodymall.svg" alt="굿디몰"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">굿디몰</strong>
-                                <p class="desc">패션, 식품, 잡화 관련 구축 경험이 있는 디자인 전문 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li><li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_withbrother.svg" alt="가치브라더"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">가치브라더</strong>
-                                <p class="desc">패션, 식품, 잡화 관련 구축 경험이 있는 디자인 전문 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li><li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_dinnerateight.svg" alt="디너앳에잇"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">디너앳에잇</strong>
-                                <p class="desc">화장품, 가구, 식품 관련 구축 경험이 있는 디자인 전문 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li><li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_sibizi.svg" alt="십이지"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">십이지</strong>
-                                <p class="desc">패션, 화장품, 반려동물, 식품 관련 구축 경험이 있는 SI 형태의 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li><li class="typeB">
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_dkbrothers.svg" alt="DK브라더스"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">DK브라더스</strong>
-                                <p class="desc">식품, 패션 관련 구축 경험이 있는 SI 형태의 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li></ul>
                 </div>
                 <div class="mPartnerItem">
                     <ul class="mPartnerList marqueeVerticalReverse">
                         <li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_designhub.svg" alt="디자인허브"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">디자인허브</strong>
-                                <p class="desc">패션, 화장품, 의료기기, 식품, 생활용품 관련 구축 경험이 있는 디자인 전문 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li>
                         <li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_madeweb.svg" alt="비에이비오 커뮤니케이션"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">비에이비오 <br class="RMB">커뮤니케이션</strong>
-                                <p class="desc">아동 패션 관련 구축 경험이 있는 SI 형태의 파트너사</p>
+                                <strong class="name">골드닥터스 
+									<!-- <br class="RMB"> -->
+								</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li>
                         <li class="typeB">
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_doa.svg" alt="DOA"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">DOA</strong>
-                                <p class="desc">패션 관련 구축 경험이 있는 SI 형태의 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li>
                         <li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_addpulse.svg" alt="애드펄스"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">애드펄스</strong>
-                                <p class="desc">패션, 화장품, 식품, 무형 굿즈 관련 구축 경험이 있는 디자인, 개발 전문 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li>
                         <li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_entwiz.svg" alt="엔트위즈소프트"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">엔트위즈소프트</strong>
-                                <p class="desc">식품, 패션 관련 구축 경험이 있는 SI 형태의 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li>
                         <li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_uneedcomms.svg" alt="유니드컴즈"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">유니드컴즈</strong>
-                                <p class="desc">패션 관련 구축 경험이 있는 SI 형태의 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li>
                     <li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_designhub.svg" alt="디자인허브"></div>
+						<div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">디자인허브</strong>
-                                <p class="desc">패션, 화장품, 의료기기, 식품, 생활용품 관련 구축 경험이 있는 디자인 전문 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li><li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_madeweb.svg" alt="비에이비오 커뮤니케이션"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">비에이비오 <br class="RMB">커뮤니케이션</strong>
-                                <p class="desc">아동 패션 관련 구축 경험이 있는 SI 형태의 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+								<p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li><li class="typeB">
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_doa.svg" alt="DOA"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">DOA</strong>
-                                <p class="desc">패션 관련 구축 경험이 있는 SI 형태의 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li><li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_addpulse.svg" alt="애드펄스"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">애드펄스</strong>
-                                <p class="desc">패션, 화장품, 식품, 무형 굿즈 관련 구축 경험이 있는 디자인, 개발 전문 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li><li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_entwiz.svg" alt="엔트위즈소프트"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">엔트위즈소프트</strong>
-                                <p class="desc">식품, 패션 관련 구축 경험이 있는 SI 형태의 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li><li>
-                            <div class="thumb"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/logo_partner_uneedcomms.svg" alt="유니드컴즈"></div>
+                            <div class="thumb"><img src="" alt=""></div>
                             <div class="text">
-                                <strong class="name">유니드컴즈</strong>
-                                <p class="desc">패션 관련 구축 경험이 있는 SI 형태의 파트너사</p>
+                                <strong class="name">골드닥터스</strong>
+                                <p class="desc">골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
                             </div>
                         </li></ul>
                 </div>
@@ -1587,11 +1621,11 @@
 
 
 <style>
-	 .intro {padding: 188px 0;}
-	.titleArea{text-align: center;}
-	.titleArea .text{display: block; margin-bottom: 24px; font-size: 48px; line-height: 58px; color: #000; font-weight: 700;}
-	.titleArea .subText{display: block; margin-bottom: 24px; font-size: 20px; line-height: 28px; color: #000;}
-	.mCardStack{position: relative; display: flex; justify-content: center; height: 200px; margin-top: 58px;}
+	 .intro {padding: 120px 0 60px;}
+	.titleArea.text_left .text{text-align: center;}
+	/* .titleArea .text{display: block; margin-bottom: 24px; font-size: 48px; line-height: 58px; color: #000; font-weight: 700;} */
+	.titleArea .subText.text_left{display: block; margin-bottom: 24px; font-size: 20px; line-height: 28px; color: #000; text-align: center; font-weight: 400;}
+	.mCardStack{position: relative; display: flex; justify-content: center; height: 250px; margin-top: 60px;}
 	.mCardStackItem{position: absolute; display: flex; flex-direction: column; justify-content: space-between; width: 140px; height: 190px; padding: 11px 8px 8px; line-height: 21px; font-size: 24px; color: #fff; transition: transform 0.5s; will-change: transform;}
 	.mCardStackItem:nth-child(1){z-index: 5; transform: translate(35px, 0);}
 	.mCardStackItem:nth-child(2){z-index: 4; transform: translate(30px, -10px);}
@@ -1600,17 +1634,17 @@
 	.mCardStackItem:nth-child(5){z-index: 1;transform: translate(-35px, -10px);}
 	.mCardStackItem .name{word-break: break-all;}
 	.mCardStackItem .thumb{overflow: hidden; height: 85px; border-radius: 6px;}
-	.mCardStackItem.lotte:after {background-image: url("/static/img/logo_intro_lotte.png");}
+	/* .mCardStackItem.lotte:after {background-image: url("/static/img/logo_intro_lotte.png");}
 	.mCardStackItem.jyp:after{background-image: url("/static/img/logo_intro_lotte.png");}
 	.mCardStackItem.eland:after{background-image: url("/static/img/logo_intro_lotte.png");}
 	.mCardStackItem.amorePacific:after{background-image: url("/static/img/logo_intro_lotte.png");}
-	.mCardStackItem.lg:after{background-image: url("/static/img/logo_intro_lotte.png");}
+	.mCardStackItem.lg:after{background-image: url("/static/img/logo_intro_lotte.png");} */
 	.mCardStackItem:after { content: ""; position: absolute; top: 11px; right: 8px; width: 24px; height: 24px; border-radius: 50%; background-position: 0 0; background-repeat: no-repeat; background-size: 100% 100%;}
-	.mCardStackItem.lotte{background-color: #e24425; color: rgb(255, 255, 255, .6);}
+	/* .mCardStackItem.lotte{background-color: #e24425; color: rgb(255, 255, 255, .6);}
 	.mCardStackItem.lg {background-color: #5D2859; color: #fff;}
 	.mCardStackItem.eland { background-color: #E67C31; color: #FAF597;}
 	.mCardStackItem.jyp { background-color: #B7CFFF; color: #0B5275;}
-	.mCardStackItem.amorePacific {background-color: #111D76; color: #76CAB2;}
+	.mCardStackItem.amorePacific {background-color: #111D76; color: #76CAB2;} */
 
 
 
@@ -1636,8 +1670,100 @@
 	.mCardStackItem:nth-child(4){transform: translate(-63px,-35px) rotate(-7.87deg)}
 	.mCardStackItem .thumb{height: 216px; border-radius: 16px;}
 	.mCardStackItem:after{top: 30px; right: 20px; width: 60px; height: 60px;}
+	.intro {padding: 220px 0 140px;}
 }
 </style>
+
+
+<style>
+	.contain { 
+  display: flex; 
+  overflow: hidden;
+  padding-top: 0px;
+}
+.contain .rolling-list ul { 
+	display: flex;
+}
+.contain .rolling-list ul li {  
+    box-sizing: border-box; 
+    border-radius: 20px; 
+    margin: 0 16px; 
+    padding: 46px 31px; 
+    display: flex; 
+    align-items: center; 
+    flex-shrink: 0;
+}
+.contain .rolling-list ul li .image-wrap { 
+	padding-right: 32px;  
+    flex-shrink: 0; 
+}
+.contain .rolling-list ul li .desc strong { 
+	display: block; 
+    font-size: 24px; 
+    margin-bottom: 24px;
+}
+.contain .rolling-list ul li .desc span { 
+	font-size: 18px;
+    line-height: 1.2;
+}
+.rolling-list.original {
+	animation: rollingleft1 33s linear infinite;
+}
+.rolling-list.clone {
+	animation: rollingleft2 33s linear infinite;
+}
+@media (min-width: 1280px){
+	.contain { 
+  display: flex; 
+  overflow: hidden;
+  padding-top: 100px;
+}
+.contain .rolling-list ul { 
+	display: flex;
+}
+.contain .rolling-list ul li {  
+    box-sizing: border-box; 
+    border-radius: 20px; 
+    margin: 0 16px; 
+    padding: 46px 31px; 
+    display: flex; 
+    align-items: center; 
+    flex-shrink: 0;
+}
+.contain .rolling-list ul li .image-wrap { 
+	padding-right: 32px;  
+    flex-shrink: 0; 
+}
+.contain .rolling-list ul li .desc strong { 
+	display: block; 
+    font-size: 24px; 
+    margin-bottom: 24px;
+}
+.contain .rolling-list ul li .desc span { 
+	font-size: 18px;
+    line-height: 1.2;
+}
+.rolling-list.original {
+	animation: rollingleft1 33s linear infinite;
+}
+.rolling-list.clone {
+	animation: rollingleft2 33s linear infinite;
+}	
+}
+
+@keyframes rollingleft1 {
+	0% { transform: translateX(0); }
+	50% { transform: translateX(-100%); }
+	50.01% { transform: translateX(100%); }
+	100% { transform: translateX(0); }
+}
+
+@keyframes rollingleft2 {
+	0% { transition: translateX(0); }
+	100% { transform: translateX(-200%); }
+}
+</style>
+
 
 
 
@@ -1647,15 +1773,14 @@
 <article style="position: relative;">
 	<section class="section intro">
 		<div class="inner">
-			<div class="titleArea">
+			<div class="titleArea text_left">
 				<h2 class="text">
-					롯데, 신세계, 아모레퍼시픽이<br class="RMB"> 선택한 <br class="RWB">
-					기업 맞춤형 솔루션
+					<b>국내 최초 3관왕 수상</b>으로<br>
+					병원 마케팅의 새로운 역사를 쓰고 있습니다.
+					
 				</h2>
-				<p class="subText">
-					스토어 구축부터 운영, 브랜딩까지 <br>
-					온라인 비즈니스에 필요한 서비스를 <br class="RMB">
-					원스톱으로 만나보세요.
+				<p class="subText text_left">
+					혁신과 신뢰로 병원 마케팅의<br> 새로운 패러다임을 제시합니다.
 				</p>
 			</div>
 			<div class="mCardStack">
@@ -1667,25 +1792,110 @@
 				
 				
 			<div class="mCardStackItem item4 lotte">
-					<strong class="name">Lotte</strong>
-					<div class="thumb"><picture><source srcset="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/img_intro_lotte.webp" type="image/webp"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/img_intro_lotte.jpg" alt="Lotte"></picture></div>
-				</div><div class="mCardStackItem item1 eland">
-					<strong class="name">Eland</strong>
-					<div class="thumb"><picture><source srcset="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/img_intro_eland.webp" type="image/webp"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/img_intro_eland.jpg" alt="Eland"></picture></div>
-				</div><div class="mCardStackItem item5 jyp">
-					<strong class="name">JYP <br>Ent.</strong>
-					<div class="thumb"><picture><source srcset="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/img_intro_jyp.webp" type="image/webp"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/img_intro_jyp.jpg" alt="JYP Ent."></picture></div>
-				</div><div class="mCardStackItem item2 amorePacific" >
-					<strong class="name">Amore<br>Pacific</strong>
-					<div class="thumb"><picture><source srcset="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/img_intro_amorepacific.webp" type="image/webp"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/img_intro_amorepacific.jpg" alt="Amore Pacific"></picture></div>
-				</div><div class="mCardStackItem item6 lg" >
-					<strong class="name">LG <br>H&amp;H</strong>
-					<div class="thumb"><picture><source srcset="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/img_intro_lg.webp" type="image/webp"><img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/img_intro_lg.jpg" alt="LG H&amp;H"></picture></div>
-				</div></div>
+				<!-- <strong class="name">Lotte</strong> -->
+				<img src="static/img/award1.jpg" alt="">
+				<div class="thumb">
+						
+						<!-- <picture><source srcset="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/img_intro_lotte.webp" type="image/webp">
+						<img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/img_intro_lotte.jpg" alt="Lotte"></picture> -->
+					</div>
+			</div>
+			<div class="mCardStackItem item1 eland">
+					<!-- <strong class="name">Eland</strong> -->
+					 <img src="static/img/award2.jpg" alt="">
+					<div class="thumb">
+						<!-- <picture>
+							<source srcset="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/img_intro_eland.webp" type="image/webp">
+							<img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/img_intro_eland.jpg" alt="Eland">
+						</picture> -->
+					</div>
+			</div>
+			<div class="mCardStackItem item5 jyp">
+					<!-- <strong class="name">JYP <br>Ent.</strong> -->
+					 <img src="static/img/award3.jpg" alt="">
+					<div class="thumb">
+						<!-- <picture><source srcset="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/img_intro_jyp.webp" type="image/webp">
+							<img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/img_intro_jyp.jpg" alt="JYP Ent."> 
+							</picture>-->
+					</div>
+			</div>
+			<div class="mCardStackItem item2 amorePacific" >
+					<!-- <strong class="name">Amore<br>Pacific</strong> -->
+					 <img src="static/img/award4.jpg" alt="">
+					<div class="thumb">
+						<!-- <picture>
+							<source srcset="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/img_intro_amorepacific.webp" type="image/webp">
+							<img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/img_intro_amorepacific.jpg" alt="Amore Pacific">
+						</picture> -->
+					</div>
+				</div>
+				<div class="mCardStackItem item6 lg" >
+					<!-- <strong class="name">LG <br>H&amp;H</strong> -->
+					 <img src="static/img/award5.jpg" alt="">
+					<div class="thumb">
+						<!-- <picture>
+							<source srcset="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/img_intro_lg.webp" type="image/webp">
+							<img src="//img.echosting.cafe24.com/ec/shop_kr/v2/enterprise/img_intro_lg.jpg" alt="LG H&amp;H">
+						</picture> -->
+					</div>
+				</div>
+			</div>
+
+			
+			<div class="contain"> <!-- 배너표시영역 -->
+				<div class="rolling-list"> <!-- 원본배너 -->
+					<ul>
+						<li>
+							<div class="image-wrap"><img src="/static/img/award_slide1.jpg" alt=""></div>	
+						</li>
+						<li>
+							<div class="image-wrap"><img src="/static/img/award_slide2.jpg" alt=""></div>
+						</li>
+						<li>
+							<div class="image-wrap"><img src="/static/img/award_slide3.jpg" alt=""></div>
+						</li>
+						<li>
+							<div class="image-wrap"><img src="/static/img/award_slide4.jpg" alt=""></div>
+						</li>
+						<li>
+							<div class="image-wrap"><img src="/static/img/award_slide5.jpg" alt=""></div>
+						</li>
+						<li>
+							<div class="image-wrap"><img src="/static/img/award_slide6.jpg" alt=""></div>
+						</li>
+						<li>
+							<div class="image-wrap"><img src="/static/img/award_slide7.jpg" alt=""></div>
+						</li>
+						<li>
+							<div class="image-wrap"><img src="/static/img/award_slide8.jpg" alt=""></div>
+						</li>
+						<li>
+							<div class="image-wrap"><img src="/static/img/award_slide9.jpg" alt=""></div>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</section>
 </article>
 
+<script>
+	// 롤링 배너 복제본 생성
+let roller = document.querySelector('.rolling-list');
+roller.id = 'roller1'; // 아이디 부여
+
+let clone = roller.cloneNode(true)
+// cloneNode : 노드 복제. 기본값은 false. 자식 노드까지 복제를 원하면 true 사용
+clone.id = 'roller2';
+document.querySelector('.contain').appendChild(clone); // wrap 하위 자식으로 부착
+
+document.querySelector('#roller1').style.left = '0px';
+document.querySelector('#roller2').style.left = document.querySelector('.rolling-list ul').offsetWidth + 'px';
+// offsetWidth : 요소의 크기 확인(margin을 제외한 padding값, border값까지 계산한 값)
+
+roller.classList.add('original');
+clone.classList.add('clone');
+</script>
 
 
 
@@ -1695,25 +1905,26 @@
 	section .inner {max-width: 1300px;}
 	.main-hotBrand .inner{box-sizing: border-box;}
 	.main-hotBrand .hotBrand-title{text-align: center;}
-	section.main-hotBrand{position: relative; z-index: 100; padding: .56rem 0; background: #f4f5f8; } 
-	.main-hotBrand h3{font-size: 48px; line-height: 1.5em;}
-	.main-hotBrand .hotBrand-title p{display: block; font-size: 20px; line-height: 1.5em; }
+	section.main-hotBrand{position: relative; z-index: 100; padding: 120px 0 60px; background: #f4f5f8; } 
+	.main-hotBrand h3{font-size: 29px; line-height: 1.5em; color: #000; font-weight: 400; margin-bottom: 20px;}
+	.main-hotBrand .hotBrand-title p{display: block; font-size: 20px; line-height: 1.5em; margin-bottom: 30px; color: #000; font-weight: 400; }
 	.main-hotBrand .hotBrand-contents{flex: 1;}
-	.hotBrand-list{display: flex; flex-wrap: wrap;  margin-top: 2.22rem; margin-bottom: -2.22rem;}
+	.hotBrand-list{display: flex; flex-wrap: wrap;  margin-top: 2.22rem; margin-bottom: -2.22rem; padding: 0 15px;}
 	.hotBrand-list .hotBrand-item{flex-basis: 100%;}
 	.hotBrand-list .hotBrand-item a{margin: 0 0 2.22rem; display: block;}
 	.hotBrand-list .hotBrand-item .thumb{font-size: 0; border-radius: 0.889rem; }
 	.hotBrand-list .hotBrand-item .desc{margin: 0.94rem 0 0;}
-	.hotBrand-list .hotBrand-item strong{font-size: 1.2rem;}
+	.hotBrand-list .hotBrand-item strong{font-size: 1.2rem; line-height: 1.5em; color: #282d4b;}
 	.hotBrand-list .hotBrand-item p{font-size: 1rem; line-height: 1.5rem;}
 
 	@media (min-width: 1280px) {
-		section.main-hotBrand{min-height: 100vh; position: relative; padding: 8.89rem 0; z-index: 1000;  overflow: visible;}
+		section.main-hotBrand{min-height: 100vh; position: relative; padding: 220px 0 140px; z-index: 1000;  overflow: visible;}
+		.main-hotBrand h3{font-size: 54px; line-height: 1.3em;  color: #000;}
     	.main-hotBrand .inner { position: relative; display: flex; height: auto; }
 		.main-hotBrand.inner { max-width: 1280px; padding: 0 40px; margin: 0 auto;}
 		.main-hotBrand .hotBrand-title { width: 24.4rem; margin-right: 4.44rem; text-align: left; flex: none;}
 		.main-hotBrand .sticky{position: sticky; top: 150px; z-index: 100; transform: none !important; color: #222;}
-		.main-hotBrand .hotBrand-title p{margin-top: 1.78rem;}
+		.main-hotBrand .hotBrand-title p{margin-top: 20px;}
 		.main-hotBrand .hotBrand-contents{align-self: auto;}
 		.hotBrand-list{margin-top: 0; margin-bottom: -3.56rem; }
 		.hotBrand-list .hotBrand-item a{margin: 0 1.11rem 3.56rem; display: block;}
@@ -1735,10 +1946,9 @@
 	<div class="inner">
 		<div class="hotBrand-title">
 			<div class="sticky">
-				<h3>지금<i class="icoEmoji">🔥</i>Hot 한 <br class="RPB RMB">그 브랜드도 카페24!</h3>
-				<p>네, 맞아요. 여기가 바로 쇼핑몰 맛집입니다.<br>
-					200만 개 브랜드가 선택한 카페24,<br class="RPB RMB">
-					지금 경험해 보세요.</p>
+				<h3>눈으로 확인하는 <b>진짜 사례들</b></h3>
+				<p>브랜딩 전략으로 병원의 신뢰도를 높이고<br>
+					환자 만족도를 자연스럽게 높여갑니다.</p>
 			</div>
 		</div>
 		<div class="hotBrand-contents">
@@ -1747,13 +1957,12 @@
 					<a href="https://nonfiction.com//" target="_blank">
 						<div class="thumb">
 							<picture>
-								<source srcset="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_nonfiction.webp" type="image/webp">
-								<img src="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_nonfiction.jpg" alt="" loading="lazy" width="100%" height="100%">
+								<img src="/static/img/border_radius.png" alt="" width="100%" height="100%">
 							&nbsp;</picture>
 						</div>
 						<div class="desc">
-							<strong>논픽션<i class="icoTarget"></i></strong>
-							<p>향을 매개로 내면의 힘을 표현하는 라이프스타일 뷰티 브랜드</p>
+							<strong>골드닥터스<i class="icoTarget"></i></strong>
+							<p>골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
 						</div>
 					</a>
 				</div>
@@ -1761,13 +1970,12 @@
 					<a href="https://ygselect.com/" target="_blank">
 						<div class="thumb">
 							<picture>
-								<source srcset="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_yg.webp" type="image/webp">
-								<img src="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_yg.jpg" alt="" loading="lazy" width="100%" height="100%">
+								<img src="/static/img/border_radius.png" alt="" width="100%" height="100%">
 							&nbsp;</picture>
 						</div>
 						<div class="desc">
-							<strong>YG SELECT<i class="icoTarget"></i></strong>
-							<p>YG소속 아티스트의 아이덴티티를 담은 MD 스토어</p>
+							<strong>골드닥터스<i class="icoTarget"></i></strong>
+							<p>골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
 						</div>
 					</a>
 				</div>
@@ -1775,13 +1983,12 @@
 					<a href="https://www.smtownandstore.com/" target="_blank">
 						<div class="thumb">
 							<picture>
-								<source srcset="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_sm.webp" type="image/webp">
-								<img src="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_sm.jpg" alt="" loading="lazy" width="100%" height="100%">
+								<img src="/static/img/border_radius.png" alt="" width="100%" height="100%">
 							&nbsp;</picture>
 						</div>
 						<div class="desc">
-							<strong>SMTOWN &amp;STORE<i class="icoTarget"></i></strong>
-							<p>SM소속 셀러브리티의 상품을 만날 수 있는 글로벌샵</p>
+							<strong>골드닥터스<i class="icoTarget"></i></strong>
+							<p>골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
 						</div>
 					</a>
 				</div>
@@ -1789,13 +1996,12 @@
 					<a href="https://andar.co.kr/" target="_blank">
 						<div class="thumb">
 							<picture>
-								<source srcset="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_andar.webp" type="image/webp">
-								<img src="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_andar.jpg" alt="" loading="lazy" width="100%" height="100%">
+								<img src="/static/img/border_radius.png" alt="" width="100%" height="100%">
 							&nbsp;</picture>
 						</div>
 						<div class="desc">
-							<strong>안다르<i class="icoTarget"></i></strong>
-							<p>K애슬레저 리딩 브랜드</p>
+							<strong>골드닥터스<i class="icoTarget"></i></strong>
+							<p>골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
 						</div>
 					</a>
 				</div>
@@ -1803,13 +2009,12 @@
 					<a href="https://66girls.co.kr/" target="_blank">
 						<div class="thumb">
 							<picture>
-								<source srcset="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_66.webp" type="image/webp">
-								<img src="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_66.jpg" alt="" loading="lazy" width="100%" height="100%">
+								<img src="/static/img/border_radius.png" alt="" width="100%" height="100%">
 							&nbsp;</picture>
 						</div>
 						<div class="desc">
-							<strong>육육걸즈<i class="icoTarget"></i></strong>
-							<p>‘좋은 옷’ 을 고민하는 여성의류 브랜드</p>
+							<strong>골드닥터스<i class="icoTarget"></i></strong>
+							<p>골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
 						</div>
 					</a>
 				</div>
@@ -1817,13 +2022,12 @@
 					<a href="https://spao.com/" target="_blank">
 						<div class="thumb">
 							<picture>
-								<source srcset="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_spao.webp" type="image/webp">
-								<img src="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_spao.jpg" alt="" loading="lazy" width="100%" height="100%">
+								<img src="/static/img/border_radius.png" alt="" width="100%" height="100%">
 							&nbsp;</picture>
 						</div>
 						<div class="desc">
-							<strong>SPAO<i class="icoTarget"></i></strong>
-							<p>대한민국 대표 SPA 패션 브랜드</p>
+							<strong>골드닥터스<i class="icoTarget"></i></strong>
+							<p>골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
 						</div>
 					</a>
 				</div>
@@ -1831,13 +2035,12 @@
 					<a href="https://ozkiz.com/" target="_blank">
 						<div class="thumb">
 							<picture>
-								<source srcset="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_ozkiz.webp" type="image/webp">
-								<img src="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_ozkiz.jpg" alt="" loading="lazy" width="100%" height="100%">
+								<img src="/static/img/border_radius.png" alt="" width="100%" height="100%">
 							&nbsp;</picture>
 						</div>
 						<div class="desc">
-							<strong>오즈키즈<i class="icoTarget"></i></strong>
-							<p>아동복 쇼핑몰 1위 브랜드</p>
+							<strong>골드닥터스<i class="icoTarget"></i></strong>
+							<p>골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
 						</div>
 					</a>
 				</div>
@@ -1845,13 +2048,12 @@
 					<a href="https://bodyluv.kr/" target="_blank">
 						<div class="thumb">
 							<picture>
-								<source srcset="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_bodyluv.webp" type="image/webp">
-								<img src="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_bodyluv.jpg" alt="" loading="lazy" width="100%" height="100%">
+								<img src="/static/img/border_radius.png" alt="" width="100%" height="100%">
 							&nbsp;</picture>
 						</div>
 						<div class="desc">
-							<strong>바디럽<i class="icoTarget"></i></strong>
-							<p>물부터 숙면까지 삶의 질을 높이는 라이프 스타일 브랜드</p>
+							<strong>골드닥터스<i class="icoTarget"></i></strong>
+							<p>골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
 						</div>
 					</a>
 				</div>
@@ -1859,13 +2061,12 @@
 					<a href="https://marketb.kr/" target="_blank">
 						<div class="thumb">
 							<picture>
-								<source srcset="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_marketb.webp" type="image/webp">
-								<img src="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_marketb.jpg" alt="" loading="lazy" width="100%" height="100%">
+								<img src="/static/img/border_radius.png" alt="" width="100%" height="100%">
 							&nbsp;</picture>
 						</div>
 						<div class="desc">
-							<strong>마켓비<i class="icoTarget"></i></strong>
-							<p>천만 고객이 선택한 홈퍼니싱 가구 브랜드</p>
+							<strong>골드닥터스<i class="icoTarget"></i></strong>
+							<p>골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
 						</div>
 					</a>
 				</div>
@@ -1873,13 +2074,12 @@
 					<a href="https://kundal.co.kr/" target="_blank">
 						<div class="thumb">
 							<picture>
-								<source srcset="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_kundal.webp" type="image/webp">
-								<img src="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_kundal.jpg" alt="" loading="lazy" width="100%" height="100%">
+								<img src="/static/img/border_radius.png" alt="" width="100%" height="100%">
 							&nbsp;</picture>
 						</div>
 						<div class="desc">
-							<strong>쿤달<i class="icoTarget"></i></strong>
-							<p>아름다운 향기와 자연 유래 성분을 담은 코스메틱 브랜드</p>
+							<strong>골드닥터스<i class="icoTarget"></i></strong>
+							<p>골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
 						</div>
 					</a>
 				</div>
@@ -1887,13 +2087,12 @@
 					<a href="https://themedicube.co.kr/" target="_blank">
 						<div class="thumb">
 							<picture>
-								<source srcset="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_medicube.webp" type="image/webp">
-								<img src="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_medicube.jpg" alt="" loading="lazy" width="100%" height="100%">
+								<img src="/static/img/border_radius.png" alt="" width="100%" height="100%">
 							&nbsp;</picture>
 						</div>
 						<div class="desc">
-							<strong>메디큐브<i class="icoTarget"></i></strong>
-							<p>임상시험을 완료한 믿고 쓸 수 있는 안전한 화장품 브랜드</p>
+							<strong>골드닥터스<i class="icoTarget"></i></strong>
+							<p>골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
 						</div>
 					</a>
 				</div>
@@ -1901,13 +2100,12 @@
 					<a href="http://mybany.com/" target="_blank">
 						<div class="thumb">
 							<picture>
-								<source srcset="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_mybany.webp" type="image/webp">
-								<img src="https://img.echosting.cafe24.com/ec/shop_kr/v2/main/img_hotBrand_mybany.jpg" alt="" loading="lazy" width="100%" height="100%">
+								<img src="/static/img/border_radius.png" alt="" width="100%" height="100%">
 							&nbsp;</picture>
 						</div>
 						<div class="desc">
-							<strong>마이바니<i class="icoTarget"></i></strong>
-							<p>인플루언서 조민영의 여성 패션, 토탈 뷰티케어 브랜드</p>
+							<strong>골드닥터스<i class="icoTarget"></i></strong>
+							<p>골드닥터스, 병원 성장과 성공을 위한 최고의 마케팅 파트너</p>
 						</div>
 					</a>
 				</div>
@@ -1953,7 +2151,7 @@
 						<div class="area">
 							<div class="con-box">
 								<div class="main-tit-box" data-scroll="">
-									<h2 class="main-tit"><b style="color:#ffcc4c">마케팅의 판도를 바꿀</b> 황금 가루,<br class="">골드닥터스와 함께라면 가능합니다!</h2>
+									<h2 class="main-tit"><b>마케팅의 판도를 바꿀</b> 황금 가루,<br class="">골드닥터스와 함께라면 가능합니다!</h2>
 									<p class="txt">당신의 전략에 황금빛 변화를 입혀보세요!</p>
 									<!-- <a href="mailto:kano@kanomail.com" class="mail"><span class="inner"><i class="xi-mail-o"></i><span class="txt">golddoctors@mail.com</span></span></a> -->
 								</div>
@@ -2036,26 +2234,14 @@
 	<script type="text/javascript" src="/static/js/layer_popup.js"></script>
 	<script type="text/javascript" src="/static/js/nav.js"></script>
   
-	<!--[if lt IE 9]>
-		<script src="https://www.e-kano.com/js/vendor/html5shiv.js"></script>
-		<script src="https://www.e-kano.com/js/vendor/respond.min.js"></script>
-	<![endif]--><script type="text/javascript" src="/static/js/main.js"></script>
-<!--[if lte IE 9]>
-		<article id="browserUpgradePopup">
-			<div class="browser-upgrade-popup-dim"></div>
-			<div class="browser-upgrade-popup-inner">
-				<button class="browser-popup-close-btn" title="close" onclick="javascript:;"><i class="xi-close-thin"></i></button>
-				<span class="browser-popup-caution-icon"><i class="xi-error-o"></i></span>
-				<h2 class="browser-popup-tit"><b>브라우저 업데이트</b> 안내</h2>
-				<p class="browser-popup-txt">현재 사용중인 브라우저는 곧 지원이 중단됩니다. <br>원활한 서비스를 제공받기 위해<br><b>보안과 속도가 강화된 브라우저로 업그레이드</b> 하시기 바랍니다.</p>
-			</div>
-		</article>
+<script type="text/javascript" src="/static/js/main.js"></script>
+
 		<script type="text/javascript">
 		$(".browser-popup-close-btn").click(function  () {
 			$("#browserUpgradePopup").hide();
 		}); 
 		</script>
-<![endif]-->
+
 <script type="text/javascript">
 $(document).ready(function  () {
 	$(".popup-rolling-con").slick({
@@ -2205,7 +2391,7 @@ $(document).ready(function  () {
                     ease: "power1.inOut"
                 }, 6);
                 tl.to(item, {
-                    height: "190px",
+                    height: "250px",
                     duration: 10,
                     ease: "power1.inOut"
                 }, 7);
