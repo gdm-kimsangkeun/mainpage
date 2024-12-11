@@ -1,0 +1,140 @@
+/* Dark Mode Theme */
+.dark-mode {
+    --gray-600: rgba(255, 255, 255, 0.5);
+    --gray-700: rgba(255, 255, 255, 0.7);
+    --gray-800: rgba(255, 255, 255, 0.85);
+    --gray-900: #ffffff;
+    --body-bg: #121212;
+    --body-color: #e0e0e0;
+    --secondary-bg: rgba(255, 255, 255, 0.04);
+    --heading-link-color: #a5d6ff;
+    --heading-link-hover-color: #81d4fa;
+    --nav-link-color: #a5d6ff;
+    --border-color: #424242;
+    --code-color: #80cbc4;
+  
+    /* Utilities */
+    .d-dark-mode-none {
+      display: none !important;
+    }
+    .d-dark-mode-block {
+      display: block !important;
+    }
+    .d-dark-mode-inline {
+      display: inline !important;
+    }
+    .d-dark-mode-inline-block {
+      display: inline-block !important;
+    }
+    .d-dark-mode-inline-flex {
+      display: inline-flex !important;
+    }
+    .d-dark-mode-flex {
+      display: flex !important;
+    }
+    .text-border {
+      color: var(--border-color) !important;
+    }
+    .text-dark:not(.badge) {
+      color: #ffffff !important;
+    }
+    .text-nav:not(.badge.bg-white) {
+      color: var(--nav-link-color) !important;
+    }
+    .text-body {
+      color: var(--body-color) !important;
+    }
+    .border-dark {
+      border-color: var(--border-color) !important;
+    }
+    .bg-light:not(.badge),
+    .card.card-hover.bg-light {
+      background-color: #212121 !important;
+    }
+    .bg-secondary,
+    .card.bg-light {
+      background-color: var(--secondary-bg) !important;
+    }
+    .bg-secondary.badge {
+      color: var(--body-color);
+    }
+    .shadow-dark-mode-none {
+      box-shadow: none !important;
+    }
+  
+    /* Restore defaults inside white backgrounds */
+    .bg-white,
+    .ignore-dark-mode {
+      --body-color: #333;
+      --nav-link-color: #007bff;
+      --border-color: #dee2e6;
+    }
+    .bg-white h1,
+    .ignore-dark-mode h1 {
+      color: #333;
+    }
+  
+    /* Forms */
+    .form-label,
+    .col-form-label {
+      color: var(--body-color);
+    }
+    .form-control,
+    .form-select {
+      border-color: #424242;
+      background-color: #121212;
+      color: #ffffff;
+    }
+    .form-control::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+  
+    /* Tables */
+    .table {
+      background-color: #212121;
+      color: var(--body-color);
+    }
+  
+    /* Buttons */
+    .btn-dark {
+      color: #000000;
+      background-color: #ffffff;
+      border-color: transparent;
+    }
+    .btn-dark:hover {
+      background-color: #cccccc;
+    }
+  
+    /* Dropdown */
+    .dropdown-menu {
+      background-color: #121212;
+      color: #ffffff;
+    }
+  
+    /* Navbar */
+    .navbar {
+      background-color: #212121;
+      color: var(--body-color);
+    }
+    .navbar .navbar-brand {
+      color: #ffffff;
+    }
+  
+    /* Cards */
+    .card {
+      background-color: #212121;
+      border-color: #424242;
+    }
+  
+    /* Modals */
+    .modal {
+      background-color: #121212;
+      border: 1px solid #424242;
+    }
+  
+    /* Breadcrumbs */
+    .breadcrumb {
+      color: #ffffff;
+    }
+  }
+  

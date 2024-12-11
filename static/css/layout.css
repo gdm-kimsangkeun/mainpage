@@ -118,7 +118,7 @@ table, th, td{word-break:break-word;}
 
 /* GNB :: 2차 전체메뉴 */
 #gnbBg{
-	overflow:hidden; position:absolute; left:0; top:-22.5px; width:100%; height:0; background:#fff url("/images/common/gnb_bg.jpg") no-repeat center bottom; z-index:98;
+	overflow:hidden; position:absolute; left:0; top:-22.5px; width:100%; height:0; background:#fff url("/static/img/gnb_bg.jpg") no-repeat center bottom; z-index:98;
 	opacity:0;filter:Alpha(opacity=0);
 	-webkit-transition:height 0.3s ease-in-out, opacity 0.2s ease-in-out;
 	transition:height 0.3s ease-in-out, opacity 0.2s ease-in-out;
@@ -195,7 +195,7 @@ table, th, td{word-break:break-word;}
 /* -------- FOOTER :: 레이아웃 -------- */
 #footer{background-color:#fff;}
 #footerInner{position:relative; }
-.footer-left-con{float:left; width:calc(100% - 650px);}
+.footer-left-con{float:left; width:calc(100% - 885px);}
 .footer-right-con{float:right; width:650px;}
 
 /* Footer :: TOP버튼 */
@@ -223,15 +223,15 @@ table, th, td{word-break:break-word;}
 .foot-menu a:hover {background-color: #424242; color: #fff;}
 /* Footer :: 사이트맵 */
 .footer-sitemap-list-con {text-align:right;}
-.footer-sitemap-list-con > ul {display:inline-block;}
-.footer-sitemap-list-con > ul > li{float:left;  text-align:left;}
+.footer-sitemap-list-con > ul {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr;}
+/* .footer-sitemap-list-con > ul > li{float:left;  text-align:left;}
 .footer-sitemap-list-con > ul > li:first-child {padding-left:0;}
 .footer-sitemap-list-con > ul > li:nth-child(even) {width:248px;}
 .footer-sitemap-list-con > ul > li:nth-child(odd) {width:95px;}
 .footer-sitemap-list-con > ul > li:nth-child(1) {width:195px;}
 .footer-sitemap-list-con > ul > li:nth-child(4) {clear:both; margin-left:195px;}
 .footer-sitemap-list-con > ul > li:nth-child(4),
-.footer-sitemap-list-con > ul > li:nth-child(5) {margin-top:-54px;}
+.footer-sitemap-list-con > ul > li:nth-child(5) {margin-top:-54px;} */
 .footer-sitemap-list-con > ul > li h3{margin-bottom:20px; color:#000; font-size:20px; font-weight:300; letter-spacing:-0.25px;}
 .footer-sitemap-list-con > ul > li .sitemap-2dep li{margin-bottom:15px;}
 .footer-sitemap-list-con > ul > li .sitemap-2dep li:last-child{margin-bottom:0}

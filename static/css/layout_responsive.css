@@ -79,12 +79,12 @@
 	#navigation > li{border-bottom:1px solid #e7e7e7;}
 	#navigation > li:first-child{border-top:1px solid #e7e7e7}
 	#navigation > li > a {position:relative; display:block; padding:15px; color:#707070; font-size:30px; font-weight:300; }
-	#navigation > li.active > a{color:#bf1e2e; font-weight:700;}
+	#navigation > li.active > a{color:#ffcc4c; font-weight:700;}
 	/* GNB Mobile ::  메뉴영역 :: 2차 */
 	#navigation > li .gnb-2dep{display:none; padding:10px 0;}
 	#navigation > li .gnb-2dep > ul > li{height:auto !important;}
 	#navigation > li .gnb-2dep > ul > li > a{display:block; color:#fff; font-size:14px; padding:8px 15px; font-weight:300;}
-	#navigation > li .gnb-2dep > ul > li.on > a{color:#bf1e2e; font-weight:500;}
+	#navigation > li .gnb-2dep > ul > li.on > a{color:#ffcc4c; font-weight:500;}
 	/* GNB Mobile :: 메뉴영역 ::  3차 */
 	#navigation > li .gnb-2dep > ul > li > .gnb-3dep{display:none; padding:10px; background-color:#aaa; margin:0 10px}
 	#navigation > li .gnb-2dep > ul > li > .gnb-3dep > li > a{display:block; padding:8px 0; font-size:13px; color:#fff;}
@@ -286,7 +286,7 @@
 	#topMenuM02 .menu-location.location1 .location-menu-con{width:calc(100% - 1px)}
 	#topMenuM02 .menu-location .location-menu-con li a{display:block; padding:7px 15px; font-size:12px; line-height:1.5; word-break:keep-all; text-align:center;}
 	#topMenuM02 .menu-location .location-menu-con li.on{position:relative;}
-	#topMenuM02 .menu-location .location-menu-con li.on a{color:#bf1e2e; font-weight:500;}
+	#topMenuM02 .menu-location .location-menu-con li.on a{color:#ffcc4c; font-weight:500;}
 
 
 	
